@@ -1,5 +1,4 @@
 package stepdefinitions;
-
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.MycoursedemyPage;
