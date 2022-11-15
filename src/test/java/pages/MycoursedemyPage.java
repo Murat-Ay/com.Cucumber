@@ -8,7 +8,6 @@ public class MycoursedemyPage {
     public MycoursedemyPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//a[text()='Log in']")
     public WebElement loginLinki;
 
