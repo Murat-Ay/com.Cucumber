@@ -1,6 +1,5 @@
 Feature: US1003 Background kullanarak Amazon arama testi
 
-
   Background: amazon anasayfaya gitme
     Given Kullanici amazon anasayfaya gider
 
