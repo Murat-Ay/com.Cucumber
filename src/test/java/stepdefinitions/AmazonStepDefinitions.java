@@ -66,7 +66,6 @@ public class AmazonStepDefinitions {
         String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(istenenKelime));
     }
-
     @Given("Kullanici {string} anasayfaya gider")
     public void kullaniciAnasayfayaGider(String istenenUrl) {
 
