@@ -7,7 +7,6 @@ import org.junit.Assert;
 import java.sql.*;
 
 public class UsersStepdefinitions {
-
     /*
         Bir database'e baglanmak ve o database'deki tablolarda islem yapabilmek icin
         oncelikle sistem yoneticisi ile gorusup gerekli bilgileri almalisiniz
@@ -23,13 +22,10 @@ public class UsersStepdefinitions {
         1- ilk adim olarak database turune uygun JDBC dependency'sini pom'a eklemeliyiz
         2- Database turune uygun olarak url, username ve password hazirlayin
         3- database baglantisi, query calistirma ve dönen sonucu kaydetmek icin variable'lar olusturun
-        4- Artik test adimlarina uyggun ilerleyebilirsiniz
-     */
-
+        4- Artik test adimlarina uyggun ilerleyebilirsiniz     */
     String url="jdbc:mysql://sql748.main-hosting.eu:3306/u480337000_jdbc_data";
     String username="u480337000_jdbc_user";
     String password="4Ob8Y]DJU/f";
-
     Connection connection; // database'e baglantimizi saglayacak
     Statement statement; // database'de istedigimiz query'leri calistirmamizi saglar
     ResultSet resultSet; // statement ile yapilan sorgu sonucunu store etmek icin kullanilir
