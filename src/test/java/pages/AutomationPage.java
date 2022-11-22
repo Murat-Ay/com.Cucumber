@@ -9,7 +9,6 @@ public class AutomationPage {
     public AutomationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement signUpLinki;
 
