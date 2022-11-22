@@ -31,6 +31,5 @@ public class TestRunner1 {
                 eksik adim yoksa, testi calistirmadan test passed yazar
    dryRun=false yazdigimizda testlerimizi calistirir
                 eksik adim varsa, ilk eksik adimda calismayi durdurur ve
-                eksik adimlari bize verir
-     */
+                eksik adimlari bize verir     */
 }
