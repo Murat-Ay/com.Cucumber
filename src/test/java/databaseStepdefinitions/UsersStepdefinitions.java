@@ -23,8 +23,7 @@ public class UsersStepdefinitions {
         1- ilk adim olarak database turune uygun JDBC dependency'sini pom'a eklemeliyiz
         2- Database turune uygun olarak url, username ve password hazirlayin
         3- database baglantisi, query calistirma ve dönen sonucu kaydetmek icin variable'lar olusturun
-        4- Artik test adimlarina uyggun ilerleyebilirsiniz
-     */
+        4- Artik test adimlarina uyggun ilerleyebilirsiniz     */
 
     String url="jdbc:mysql://sql748.main-hosting.eu:3306/u480337000_jdbc_data";
     String username="u480337000_jdbc_user";
