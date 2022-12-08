@@ -152,9 +152,7 @@ public class DBUtils {
         }
         return rowList;
     }
-    /**
-     * @return list of values of a single column from the result set
-     */
+    //@return list of values of a single column from the result set
     public static List<Object> getColumnData(String query, String column) {
         executeQuery(query);
         List<Object> rowList = new ArrayList<>();
@@ -194,10 +192,8 @@ public class DBUtils {
         }
         return rowList;
     }
-    /*
-     * @return List of columns returned in result set
-     */
-    public static List<String> getColumnNames(String query) {
+        // @return List of columns returned in result set
+        public static List<String> getColumnNames(String query) {
         executeQuery(query);
         List<String> columns = new ArrayList<>();
         ResultSetMetaData rsmd;
@@ -212,5 +208,4 @@ public class DBUtils {
         }
         return columns;
     }
-
 }
