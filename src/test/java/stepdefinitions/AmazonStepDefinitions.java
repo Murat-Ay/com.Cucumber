@@ -29,7 +29,6 @@ public class AmazonStepDefinitions {
         Driver.closeDriver();
     }
 
-
     @Given("Kullanici amazon anasayfaya gider")
     public void kullaniciAmazonAnasayfayaGider() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
@@ -55,12 +54,10 @@ public class AmazonStepDefinitions {
         String expectedkelime="Apple";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
-
     @Then("Arama cubuguna {string} yazip aratir")
     public void aramaCubugunaYazipAratir(String istenenKelime) {
         amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
     }
-
     @And("Arama sonuclarinin {string} icerdigini test eder")
     public void aramaSonuclarininIcerdiginiTestEder(String istenenKelime) {
         String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
