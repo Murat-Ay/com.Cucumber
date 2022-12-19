@@ -9,7 +9,6 @@ import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-
 public class AmazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
     @When("Arama cubuguna Nutella yazip aratir")
