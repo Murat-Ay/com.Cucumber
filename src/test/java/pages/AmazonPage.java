@@ -10,7 +10,6 @@ public class AmazonPage {
     public AmazonPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     // amazondaki arama kutusunu locate edelim
     @FindBy(id="twotabsearchtextbox")
     public WebElement aramaKutusu;
