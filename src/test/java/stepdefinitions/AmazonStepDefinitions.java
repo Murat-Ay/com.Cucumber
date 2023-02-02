@@ -21,6 +21,7 @@ public class AmazonStepDefinitions {
         String expectedkelime="Nutella";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
+
     @Then("Sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
