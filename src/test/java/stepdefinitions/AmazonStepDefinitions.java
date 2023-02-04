@@ -26,6 +26,7 @@ public class AmazonStepDefinitions {
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
+
     @Given("Kullanici amazon anasayfaya gider")
     public void kullaniciAmazonAnasayfayaGider() {
     Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
