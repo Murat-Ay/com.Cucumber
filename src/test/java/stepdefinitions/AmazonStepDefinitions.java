@@ -26,7 +26,6 @@ public class AmazonStepDefinitions {
         Driver.closeDriver();
     }
 
-
     @Given("Kullanici amazon anasayfaya gider")
     public void kullaniciAmazonAnasayfayaGider() {
     Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
@@ -42,6 +41,7 @@ public class AmazonStepDefinitions {
         String expectedkelime="Java";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
+
     @Then("Arama kutusuna Apple yazip aratir")
     public void arama_kutusuna_apple_yazip_aratir() {
         amazonPage.aramaKutusu.sendKeys("Apple" + Keys.ENTER);
