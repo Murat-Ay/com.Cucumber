@@ -52,6 +52,8 @@ public class AmazonStepDefinitions {
         String expectedkelime="Apple";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
+
+
     @Then("Arama cubuguna {string} yazip aratir")
     public void aramaCubugunaYazipAratir(String istenenKelime) {
         amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
