@@ -19,6 +19,7 @@ public class MycoursedemyStepdefinitions {
     public void my_course_password_olarak_girer(String verilenPassword) {
         mycoursedemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty(verilenPassword));
     }
+
     @Then("myCourse login butonuna basar")
     public void my_course_login_butonuna_basar() {
         mycoursedemyPage.loginButonu.click();
