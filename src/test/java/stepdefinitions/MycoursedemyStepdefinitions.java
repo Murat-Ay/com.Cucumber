@@ -15,10 +15,12 @@ public class MycoursedemyStepdefinitions {
     public void my_course_kullanici_adi_olarak_girer(String verilenEmail) {
         mycoursedemyPage.emailKutusu.sendKeys(ConfigReader.getProperty(verilenEmail));
     }
+
     @Then("myCourse password olarak {string} girer")
     public void my_course_password_olarak_girer(String verilenPassword) {
         mycoursedemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty(verilenPassword));
     }
+
 
     @Then("myCourse login butonuna basar")
     public void my_course_login_butonuna_basar() {
