@@ -11,6 +11,7 @@ public class MycoursedemyStepdefinitions {
     public void my_course_anasayfa_login_linkine_tiklar() {
         mycoursedemyPage.loginLinki.click();
     }
+
     @Then("myCourse kullanici adi olarak {string} girer")
     public void my_course_kullanici_adi_olarak_girer(String verilenEmail) {
         mycoursedemyPage.emailKutusu.sendKeys(ConfigReader.getProperty(verilenEmail));
