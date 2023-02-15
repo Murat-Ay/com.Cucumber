@@ -7,6 +7,7 @@ import utilities.ConfigReader;
 
 public class MycoursedemyStepdefinitions {
     MycoursedemyPage mycoursedemyPage=new MycoursedemyPage();
+
     @Then("myCourse anasayfa login linkine tiklar")
     public void my_course_anasayfa_login_linkine_tiklar() {
         mycoursedemyPage.loginLinki.click();
